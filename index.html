@@ -4,77 +4,143 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="aboutme.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+
+        body {margin:0;
+        background: black}
+
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .content {
+            margin-left: 75px;
+            font-size: 30px;
+        }
+
+
+        /* Header/Logo Title */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background: #1abc9c;
+            color: white;
+            margin-left: 50px;
+            font-size: 30px;
+        }
+
+
+
+        /*flex*/
+        .flex-container {
+            display: flex;
+            background-color: black;
+            margin-top: 0px;
+            margin-left: 40px;
+            height: 700px;
+
+
+        }
+        .flex-container>div>div{
+            background: darkred;
+            height: 30%;
+            width: 100%;
+            margin: 10px;
+                                  }
+
+        .flex-container > div {
+            background-color: DodgerBlue;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            color: white;
+            width: 33%;
+        }
+
+
+    </style>
 
 </head>
-<body bgcolor="#87ceeb">
-<!--<img src="691058.png">-->
+<body>
 
-<h1>It's a prototype Website . The real version is still under construction. </h1>
+<div class="icon-bar">
+    <a href="https://www.facebook.com/profile.php?id=100003732326097" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="google"><i class="fa fa-google"></i></a>
+    <a href="https://www.linkedin.com/in/vickykumar-thelonelinux/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com/thelonelinux" class="github"><i class="fa fa-github"></i></a>
+    <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
 
-<div id="header"></div>
-<div class="left"></div>
-<div class="stuff">
-    <br><br>
-    <h1>Resume</h1>
-    <h2>Vicky Kumar</h2>
-    <hr />
-    <hr />
-    <hr />
-    <br>
-    <p class="head"><b>Interests</b></p>
-    <ul>
-        <li>Drawing</li>
-        <li>Football,Cricket</li>
-        <li>Design</li>
-        <li>Programming</li>
-        <li>Computer Science</li>
-    </ul>
-    <hr />
-    <hr />
-    <br>
-    <br>
-    <p class="head"><b>Skills</b></p>
-    <ul>
-        <li>Programming Languages like Java,C,C++</li>
-        <li>Web Design with HTML , CSS and JS</li>
-    </ul>
-    <hr />
-    <hr />
-    <br>
-    <br>
-    <p class="head"><b>Education</b></p>
-    <ul>
-        <li>Sun Shine Academy</li>
-        <li>South Point Academy</li>
-        </a>
-        <a href="http://www.vandanainternationalschool.in/">
-            <li>Vandana International School,Delhi Dwarka Sec-10 (94% In PCM)</li>
-        </a>
-        <li>Delhi Technological University, Delhi(2016-20)</li>
-    </ul>
-    <hr />
-    <hr />
-    <br>
-    <br>
-    <p class="head"><b>Experience</b></p>
-    <ul>
-        <li>Internship at Node Js</li>
-        <li>Online Projects</li>
-    </ul>
-    <hr />
-    <hr />
-    <br>
-    <br>
-    <p class="head"><b>Hobbies</b></p>
-    <ul>
-        <li>Football</li>
-        <li>Painting</li>
-        <li>Designing</li>
-    </ul>
+
 </div>
-<div class="right"></div>
-<div id="footer">
-    <h2 id="name">Vicky Kumar</h2></div>
+
+<div class="header">
+    <h1>Hello I am Vicky</h1>
+    <p>My Portfolio</p>
+</div>
+
+
+<div class="flex-container">
+        <div>1. Achievements, Skills, Projects
+            <div class="1A">ACHIEVEMENTS</div>
+            <div class="1B">SKILLS</div>
+            <div class="1C">PROJECTS</div>
+        </div>
+        <div>2. Academics, Hobbies, Experience
+            <div class="2A">ACADEMICS</div>
+            <div class="2B">HOBBIES</div>
+            <div class="2C">EXPERIENCES</div>
+
+        </div>
+        <div>3. About Me</div>
+</div>
+
+
 
 </body>
 </html>
